@@ -5,8 +5,8 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "parcel:dev": "parcel", 
-    "parcel:build": "parcel build", 
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build"
@@ -15,8 +15,14 @@
   "author": "ECL <ecristoball@uoc.edu>",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-posthtml": "^2.12.0",
     "npm-run-all": "^4.1.5",
     "parcel": "latest",
+    "posthtml": "^0.16.6",
+    "posthtml-include": "^2.0.1",
     "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
   }
 }
