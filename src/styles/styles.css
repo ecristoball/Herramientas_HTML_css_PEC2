@@ -40,7 +40,9 @@ header li a{
 
 footer {
   margin: 0;
-  padding-top: 10px;
+  margin-top: 0;
+  padding-top: 0;
+  
   font-family:'Lato', 'Noto Serif',  'sans-serif';
   font-size: 0.75rem;
   flex-direction: row;
@@ -66,12 +68,22 @@ footer .logofooter img {
   }
 
   footer nav ul li a {
-    color: white; /* Aplica el color blanco específicamente a los enlaces dentro de nav */
+    color: white; 
   }
 
-/***copia */
 
+.container-enl{
+  width: 75%;
+  text-align: left;
+}
+.container-enl ul li {
+  margin-bottom: 15px; 
 
+}
+
+.container-enl ul ul li {
+  margin-bottom: 8px; 
+}
 
 
 
@@ -90,7 +102,7 @@ footer .logofooter img {
   padding: 10px;
   margin-top:0px;
   width: 100%;
-  text-align: left center;
+  text-align: center;
 }
 .menu_ppal ul {
   text-align: center;
@@ -160,10 +172,13 @@ height: 50vh; /* La al{tura ocupa el 50% de la altura de la ventana */
 max-width: 100%;
 margin: 0 auto; /* Centra el mapa en su contenedor */
 }
-
-
 .map-container p{
 text-align: center;
+}
+
+main{
+  display:grid;
+  place-items: center;
 }
 
 /*** TMP 
@@ -307,7 +322,7 @@ footer .foot1 {
 footer .foot2  {
   border: 2px solid rgb(69, 14, 234);
   flex-basis: 50%; /* Ocupa el 7% del ancho del contenedor */
-  text-align: right; /* Alineación a la derecha del contenido del nav */
+  text-align: left; /* Alineación a la derecha del contenido del nav */
 }
 footer nav ul li {
   display: block;
@@ -337,7 +352,7 @@ footer ul {
   display: flex;
 }
 .logofooter img {
-  width: 70%;
+  width: 30%;
 }
 .container-detalle{
   display: grid;
@@ -439,7 +454,7 @@ footer ul {
     margin-bottom: 5px;
 }
 .logofooter img {
-    width: 80%;
+    width: 30%;
 }
 
 .container-index {
@@ -535,9 +550,11 @@ header {
       justify-content: center;
   }
   .logofooter img {
-    width: 25%;
+    width:8%;
   }
-
+  .foot1, .foot2 {
+    margin: 10px 0; /* Add spacing between the stacked items */
+  }
 .container-cat {
   display: grid;
   grid-template-columns: 1fr ;
