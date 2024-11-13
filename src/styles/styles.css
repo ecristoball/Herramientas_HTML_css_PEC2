@@ -1,23 +1,18 @@
-
+/*** principales***/
 body {
   margin: 0;
+  padding: 0;
   font-family:'Lato', 'Noto Serif',  'sans-serif';
-  color:rgb(0,59,74);
+  color: rgb(7, 0, 74);
   display: block;
-  font-size: 16px;
-
   background-color: rgb(236, 231, 231);   
-  margin: 0;
-padding: 0;
-}
-.subcontainer-press1 {
   text-align: center;
 }
+
 header {
   margin: 0;
   font-family:'Lato', 'Noto Serif',  'sans-serif';
   display: flex;
-  font-size: 16px;
   background-color: rgb(7, 0, 74);
 }
 header nav {
@@ -31,45 +26,71 @@ header ul {
   text-align: right;
   list-style-type: none;
   margin-bottom: 5px;
-  
-  
 }
 header li{
 display: inline-block;
 margin-left:5px;
-color:white;
 }
 header li a{
   color:white;
 }
+.logoheader img {
+  width: 75%;
+}
+
 footer {
-margin: 0;
-font-family:'Lato', 'Noto Serif',  'sans-serif';
-
-font-size: 16px;
-
-flex-direction: row;
+  margin: 0;
+  padding-top: 10px;
+  font-family:'Lato', 'Noto Serif',  'sans-serif';
+  font-size: 0.75rem;
+  flex-direction: row;
   justify-content: space-between;
   align-items: right;
-
-display: flex;
-color : rgb(255,255,255);
-background-color: rgb(7, 0, 74);
-flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si es necesario */
+  display: flex;
+  color : rgb(255,255,255);
+  background-color: rgb(7, 0, 74);
+  flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si es necesario */
 }
+
 footer ul {
 text-align: right;
 list-style-type: none;
 margin-bottom: 5px;
 }
+footer .logofooter img {
+  max-width: 40%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
 
+  }
+
+  footer nav ul li a {
+    color: white; /* Aplica el color blanco específicamente a los enlaces dentro de nav */
+  }
+
+/***copia */
+
+
+
+
+
+/***submenus*/
+
+.subcontainer-text-level1 {
+  width: 80%;
+  margin: auto;
+
+}
+.subcontainer-text-level1 ul {
+  list-style-type: none;
+}
 .menu_ppal nav {
   display: inline-block;
   padding: 10px;
   margin-top:0px;
   width: 100%;
   text-align: left center;
-  color:red;
 }
 .menu_ppal ul {
   text-align: center;
@@ -79,10 +100,10 @@ margin-bottom: 5px;
 .menu_ppal li{
   display: inline-block;
   margin-left:0px;
-  background-color: blueviolet;
-  border : 2px solid rgb(0, 0, 0);
+  background-color:rgb(7, 0, 74);
+  border : 2px solid rgb(7, 0, 74);
   color:white;
-  padding:5px;
+  padding:8px;
 
 }
 .menu_ppal li a {
@@ -139,13 +160,7 @@ height: 50vh; /* La al{tura ocupa el 50% de la altura de la ventana */
 max-width: 100%;
 margin: 0 auto; /* Centra el mapa en su contenedor */
 }
-footer .logofooter img {
-max-width: 40%;
-height: auto;
-margin-bottom: 10px;
-margin-top: 10px;
 
-}
 
 .map-container p{
 text-align: center;
@@ -207,7 +222,6 @@ figcaption {
   border: none;
   padding: 10px;
   cursor: pointer;
-  font-size: 18px;
 }
 
 .carrusel-button.prev {
@@ -227,23 +241,38 @@ figcaption {
   height: 100%;
 }
 
+
+
+/* h1, h2...*/
+
+h1 {
+  font-size:2.5rem;
+  text-align: center;
+}
+h2 {
+  font-size:1.5rem;
+  
+}
 /*****************CONSULTAS A LOS MEDIOS***********/
 /****************************************************/
 
 /*desktop*********************************************/
 @media only screen and (min-width: 1024px)  {
-.container-cat {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 30px;
-  width: 90%; 
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 0px;
-  padding-left: 0px;
-  padding-bottom: 40px;
-}
+  html {
+    font-size: 18px;
+  }
+  .container-cat {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    width: 90%; 
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 40px;
+  }
 .container-cat-title {
   width: 90%; 
   margin-right: auto;
@@ -265,37 +294,81 @@ figcaption {
   padding-bottom: 40px;
 }
 
-footer {
-    display: flex;
- }
-
- footer .foot1, footer .foot2 {
+.foot2 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  flex-basis: 48%; /* Asigna a cada sección casi la mitad del espacio */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center; /* Alinea verticalmente al centro */
 }
-footer nav ul li:nth-child(2) {
-    border-right: 1px solid rgb(255, 255, 255);
-    border-left: 1px solid rgb(255, 255, 255);
-    padding-right: 5px;
-    padding-left: 5px;
+footer .foot1 {
+  flex-basis: 20%; /* Ocupa el 25% del ancho del contenedor */
+  border: 2px solid rgb(0, 255, 21);
 }
-    footer nav ul li:nth-child(1),footer nav ul li:nth-child(3) {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
 
+footer .foot2  {
+  border: 2px solid rgb(69, 14, 234);
+  flex-basis: 50%; /* Ocupa el 7% del ancho del contenedor */
+  text-align: right; /* Alineación a la derecha del contenido del nav */
+}
+footer nav ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+footer ul {
+  text-align: right;
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 5px;
+  border: 2px solid rgb(199, 10, 13);
+  padding-left: 0px;
+}
+
+.foot2 .redessociales ul,
+.foot2 nav ul {
+  display: flex;
+  gap: 20px; /* Espacio entre los elementos de cada lista */
+  list-style: none; /* Quita los puntos de las listas */
+  padding: 0; /* Elimina el relleno de la lista */
+  margin: 0; /* Elimina el margen de la lista */
+}
+.redessociales ul {
+  display: flex;
+}
+.logofooter img {
+  width: 70%;
+}
+.container-detalle{
+  display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Columna central es el doble de ancha */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+.container-detalle h1 {
+  grid-column: 1 / -1; 
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.columna-lateral img {
+  width: 100%;      /* La imagen ocupa el 100% del ancho de la columna */
+  height: auto;     /* Mantiene la proporción original de la imagen */
+  max-width: 100%;  /* Evita que la imagen se desborde */
+  display: block;   /* Evita espacios no deseados debajo de la imagen */
+}
+
+/*
 section {
     padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
  }
- .foot2 nav, .redessociales{
-  width:90%
- }
+ */
  .redessociales  {
   display: flex;
 }
@@ -311,15 +384,18 @@ section {
 /***** MEDIA QUERY******************/
 /*tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 16px;
+  }
 #map {
   height: 40vh; /* Reduce la altura en pantallas más pequeñas */
 }
+
 footer {
     text-align: center;
-    font-size: 0.75rem;
-    padding-top: 10px;
-    padding-bottom: 60px;
+    font-size: 0.75rem;  
 }
+
 footer nav ul li {
     display: block;
     width: 100%;
@@ -337,6 +413,21 @@ footer ul {
     padding-left: 0px;
 }
 
+
+.foot2 {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+.foot2 .redessociales ul,
+.foot2 nav ul {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos de cada lista */
+    list-style: none; /* Quita los puntos de las listas */
+    padding: 0; /* Elimina el relleno de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+}
 .redessociales ul {
     display: flex;
 }
@@ -389,21 +480,22 @@ footer ul {
   padding-left: 0px;
   padding-bottom: 40px;  
 }
-.subcontainer-entrada3 {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
-    gap: 30px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    }
+.columna-lateral img {
+  width: 100%;          /* Hace que las imágenes se ajusten al ancho del contenedor */
+  height: auto;         /* Mantiene la proporción de la imagen */
+  object-fit: contain;  /* Asegura que la imagen se ajuste al contenedor sin recortarse */
+  max-width: 100%;      /* Evita que la imagen se desborde en pantallas más pequeñas */
+  max-height: 200px;    /* Limita la altura máxima en pantallas más pequeñas */
+}
+
 }
 
 
 /*movil*/
 @media only screen and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
 #map {
   height: 30vh; /* Reduce la altura en pantallas más pequeñas */
 }
@@ -417,57 +509,41 @@ footer ul {
 header {
     font-size: 0.75rem;
 }
-.logo img {
-    width: 75%;
-}
-footer {
+
+  footer {
     text-align: center;
     font-size: 0.75rem;
     padding-top: 10px;
-    padding-bottom: 30px;
-}
-footer nav ul li {
+    padding-bottom: 10px;
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+  footer ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:0;
+  }
+  footer nav ul li {
     display: block;
     width: 100%;
     text-align: center;
     margin-left: 0;
-    border: 2px solid rgb(212, 0, 255);
-    padding-left:0;
-}
-footer ul {
-    
-    text-align: right;
-    list-style-type: none;
-    margin-left: 0;
-    margin-bottom: 5px;
-    padding-left:0px;
-}
-
-.redessociales ul li {
-    display: flex;
-    
-}
-footer ul {
-    text-align: center;
-    list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-}
-.logofooter img {
+    padding-left:0; 
+  }
+  .redessociales ul li {
+      display: flex;
+      justify-content: center;
+  }
+  .logofooter img {
     width: 25%;
-}
-.parte3 .apartado2 section,.parte3 .apartado4 section{
-    flex-direction: column-reverse;
-}
+  }
+
 .container-cat {
   display: grid;
   grid-template-columns: 1fr ;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 30px;
-  
-    width: 95%; 
-
+  width: 95%; 
   margin-right: auto;
   margin-left: auto;
   padding-right: 0px;
@@ -483,5 +559,21 @@ padding-right: 0px;
 padding-left: 0px;
 padding-bottom: 40px;  
 }
-
+.container-detalle{
+  display: grid;
+    grid-template-columns: 1fr ; /* Columna central es el doble de ancha */
+    gap: 20px;
+    padding: 20px;
+    
+    margin: 0 auto;
+    text-align: left;
+}
+.columna-lateral img {
+  width: 100%;          /* Hace que las imágenes se ajusten al ancho del contenedor */
+  height: auto;         /* Mantiene la proporción de la imagen */
+  object-fit: contain;  /* Asegura que la imagen se ajuste al contenedor sin recortarse */
+  max-width: 100%;      /* Evita que la imagen se desborde en pantallas más pequeñas */
+  max-height: 200px;    /* Limita la altura máxima en pantallas más pequeñas */
+}
+}
 /************* fin ****CONSULTAS A LOS MEDIOS***********/
