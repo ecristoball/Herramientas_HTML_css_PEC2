@@ -21,7 +21,7 @@ var customIcon = L.icon({
     iconUrl: iconUrl,
     iconSize: [25, 41],       // Tamaño del icono
     iconAnchor: [12, 41],     // Punto del icono que se anclará en el mapa
-    popupAnchor: [1, -34],    // Punto donde aparecerá el popup
+    popupAnchor: [1, -34],    
 });
 ubicaciones.forEach(ubic => {
     L.marker([ubic.lat, ubic.lng], { icon: customIcon })
