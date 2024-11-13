@@ -564,16 +564,16 @@ padding-bottom: 40px;
     grid-template-columns: 1fr ; /* Columna central es el doble de ancha */
     gap: 20px;
     padding: 20px;
-    
     margin: 0 auto;
     text-align: left;
 }
 .columna-lateral img {
-  width: 100%;          /* Hace que las imágenes se ajusten al ancho del contenedor */
-  height: auto;         /* Mantiene la proporción de la imagen */
-  object-fit: contain;  /* Asegura que la imagen se ajuste al contenedor sin recortarse */
-  max-width: 100%;      /* Evita que la imagen se desborde en pantallas más pequeñas */
-  max-height: 200px;    /* Limita la altura máxima en pantallas más pequeñas */
+  width: 100%;         
+  height: auto;         
+  object-fit: contain;  
+  max-width: 100%;      
+  max-height: 200px;    
 }
+
 }
 /************* fin ****CONSULTAS A LOS MEDIOS***********/
