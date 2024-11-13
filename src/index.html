@@ -2,29 +2,55 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&family=Lato&family=Noto+Serif:wght@600&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Descubre </title>
   <link rel="stylesheet" href='./styles/styles.css'>
 </head>
 <body>
-  <header>
-    <h1>Bienvenido a </h1>
-    <nav>
-      <ul>
-        <li><a href="./categoria.html">Que ver en Pamplona</a></li>
-        <li><a href="presentacion.html">Sobre el sitio</a></li>
-        <li><a href="enlaces.html">Enlaces y Fuentes</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section>
-    <h2>Descubre la belleza de ]</h2>
-    <p>Explora todo lo que este lugar tiene para ofrecer: historia, cultura, naturaleza y más.</p>
-  </section>
+  <include src="./components/header.html"></include>
+  <main>
+    <h1>Descubre la belleza de Pamplona</h1>
+    <div class="menu_ppal">
+      <nav>
+        <ul>
+            <li><a href="categoria.html">Qué visitar</a></li>
+            <li><a href="presentacion.html">Los imprescindibles</a></li>
+            <li><a href="enlaces.html">Enlaces y Fuentes</a></li>
+        </ul>
+      </nav>
+    </div>
+    <figure>
+      <div class="imagen-views">
+          <img src="./images/pamplona_view.jpg" alt="Calle Estafeta">
+      </div>
+      <figcaption></figcaption>
+    </figure>
+    <section>
+        <h2>Pamplona, la capital del Reyno y tu escapada perfecta</h2>
+      <p>Una ciudad amurallada, verde, gourmet y jacobea</p>
+      <p>
+    
+        ¿Estás planificando tu escapada? ¡Pues este es el sitio perfecto! Y aquí te vamos a dar toooda la información que se nos puede ocurrir para hacer de tu viaje a Pamplona una experiencia TOP.
+        
+        Visitas culturales; que el saber no ocupa lugar y hay que hacerle un hueco. Un casco histórico que da gloria verlo de lo bien cuidado que está. Zonas verdes y jardines que dan para un cuadro impresionista. Bares de pinchos con auténticas virguerías culinarias. Ambiente cultural, bullicio jacobeo, tiendas de las de toda la vida…
+        
+        Y más: un conjunto amurallado con una ciudadela renacentista que es la envidia de las ciudadelas; unas fiestas patronales conocidas en todo el mundo; y una calidad de vida que se palpa en cuanto llegas a la ciudad.
+        
+        Ya ves, si pensabas conocer Pamplona en un día no va a ser fácil, y probablemente 24 horas se te queden cortas. Pamplona es un destino perfecto para un fin de semana, así que lo mejor es que te reserves dos días o un puente.
+        
+        Para qué engañarnos, Pamplona tiene alma conquistadora y es difícil no sucumbir a sus encantos. Y ahora verás por qué.
+        </p>
+    
+      </section>
+    
+  </main>
 
+  <script src="./scripts/menu.js"></script>
   <include src="./components/footer.html"></include>
   
- 
+   
 </body>
 </html>

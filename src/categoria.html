@@ -1,95 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lugares de Interés en [Nombre del lugar]</title>
-  <link rel="stylesheet" href="./styles/styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&family=Lato&family=Noto+Serif:wght@600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lugares de Interés en [Nombre del lugar]</title>
+        <link rel="stylesheet" href="./styles/styles.css">    
+    </head>
 
-     
-</head>
-<body>
-    <header>
-        
-        <div class="head1">
-            <div class="logoheader"><img src="./images/logo_pamplona_600.png" alt="logoVital360"></div>
-          
-        </div>
-        <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="presentacion.html">Sobre el sitio</a></li>
-            <li><a href="enlaces.html">Enlaces y Fuentes</a></li>
-        </ul>
-        </nav>
-    </header>
-  
-    <section>
-    <h1>Lugares de Interés</h1>
-    <h2>Lugares imprescindibles en pamplona</h2>
-    
-    </section>
-
-    <div class="container-cat">
-        <div class="subcontainer-cat1">
-            <figure>
-                <div class="imagen-video">
-                    <img src="./images/ciudadela.jpg" alt="La ciudadela">
-                    <div class="categoria"><a href="">Ciudadela</a></div>
-                </div>
-                <figcaption>Por Daniel López - 30 de diciembre de 2023</figcaption>
-            </figure>
-            <div class="texto">
-                <h2> <a href="">La ciudadela</a></h2>
-                <p>
-                    Mantenerse activo es clave para una vida saludable. Encuentra estrategias prácticas y sencillas para integrar más
-                    actividad física en tu rutina diaria, independientemente de tu nivel de fitness o estilo de vida. 
-                </p>
-                <a href="">Leer más</a>                                         
+    <body>
+        <include src="./components/header.html"></include>
+        <main>
+            <section>
+            </section>
+            <div class="container-cat-title">
+                <h2>Lugares imprescindibles a visitar en Pamplona</h2>
             </div>
-        </div>
-        <div class="subcontainer-cat1">
-            <figure>
-                <div class="imagen-video">
-                    <img src="./images/ayuntamiento.jpg" alt="Ayuntamiento">
-                    <div class="categoria"><a href="">Ciudadela</a></div>
+            <div class="container-cat">     
+                <div class="subcontainer-cat1">
+                    <figure>
+                        <div class="imagen-video">
+                            <img src="./images/ciudadela.jpg" alt="La ciudadela">
+                            
+                        </div>
+                        <figcaption>Vista aérea de la ciudadela</figcaption>
+                    </figure>
+                    <div class="subcontainer-cat1-texto">
+                        <h2> <a href="">La ciudadela</a></h2>
+                        <p>
+                            Pulmón verde de la ciudad, hoy en día es la ciudadela pentagonal en pie más antigua del mundo.
+                        </p>
+                        <a href="">Leer más</a>                                         
+                    </div>
                 </div>
-                <figcaption>Por Daniel López - 30 de diciembre de 2023</figcaption>
-            </figure>
-            <div class="texto">
-                <h2> <a href="">La ciudadela</a></h2>
-                <p>
-                    Mantenerse activo es clave para una vida saludable. Encuentra estrategias prácticas y sencillas para integrar más
-                    actividad física en tu rutina diaria, independientemente de tu nivel de fitness o estilo de vida. 
-                </p>
-                <a href="">Leer más</a>                                         
-            </div>
-        </div>
-        <div class="subcontainer-cat1">
-            <figure>
-                <div class="imagen-video">
-                    <img src="./images/plaza_del_castillo.jpg" alt="La plaza del Castillo">
-                    <div class="categoria"><a href="">Ciudadela</a></div>
+                <div class="subcontainer-cat1">
+                    <figure>
+                        <div class="imagen-video">
+                            <img src="./images/ayuntamiento.jpg" alt="Ayuntamiento">
+                        </div>
+                        <figcaption>Vista del Ayuntamiento y plaza</figcaption>
+                    </figure>
+                    <div class="texto">
+                        <h2> <a href="">El Ayuntamiento</a></h2>
+                        <p>
+                            Fachada de estilo Barroco tardío y Neoclásica, es el lugar desde donde se lanza el chupinazo cada 6 de julio y lugar obligado de paso de los peregrinos.
+                        </p>
+                        <a href="">Leer más</a>                                         
+                    </div>
                 </div>
-                <figcaption>Por Daniel López - 30 de diciembre de 2023</figcaption>
-            </figure>
-            <div class="texto">
-                <h2> <a href="">La ciudadela</a></h2>
-                <p>
-                    Mantenerse activo es clave para una vida saludable. Encuentra estrategias prácticas y sencillas para integrar más
-                    actividad física en tu rutina diaria, independientemente de tu nivel de fitness o estilo de vida. 
-                </p>
-                <a href="">Leer más</a>                                         
-            </div>
-        </div>
-  
-    </div>
-  
-  
-
-  <p>prueba</p>
-  <div id="map" style="width: 600px; height: 400px;"></div>
-  <script type="module" src="./scripts/map.js"></script>
-  <include src="./components/footer.html"></include>
-</body>
+                
+                <div class="subcontainer-cat1">
+                    <figure>
+                        <div class="imagen-video">
+                            <img src="./images/plaza_del_castillo.jpg" alt="La plaza del Castillo">
+                        </div>
+                        <figcaption>El Quiosco de la Plaza del Castillo</figcaption>
+                    </figure>
+                    <div class="texto">
+                        <h2> <a href="">La La plaza del Castillo</a></h2>
+                        <p>
+                            Llamada así por ocupar el espacio del antiguo castillo de Luis Hutín. Esta plaza es hoy en día el "cuarto de estar" de la ciudad.
+                       </p>
+                        <a href="">Leer más</a>                                         
+                    </div>
+                </div>
+                <div class="subcontainer-cat1">
+                    <figure>
+                        <div class="imagen-video">
+                            <img src="./images/estafeta.jpg" alt="Calle Estafeta">
+                        </div>
+                        <figcaption>Calle Estafeta durante un encierro</figcaption>
+                    </figure>
+                    <div class="subcontainer-cat1-texto">
+                        <h2> <a href="">Calle Estafeta</a></h2>
+                        <p>
+                            Una de las calles más conocidas de Pamplona por formar parte del recorrido del encierro y por sus bares y pintxos.
+                        </p>
+                        <a href="">Leer más</a>                                         
+                    </div>
+                </div>
+                <div class="subcontainer-cat1">
+                    <figure>
+                        <div class="imagen-video">
+                            <img src="./images/CuestaSantoDomingo.jpg" alt="Calle Estafeta">
+                        </div>
+                        <figcaption>Canto a San Fermin antes de un encierro</figcaption>
+                    </figure>
+                    <div class="subcontainer-cat1-texto">
+                        <h2> <a href="">Cuesta de Santo Domingo </a></h2>
+                        <p>
+                            En la cuesta de Santo Domingo se sitúan los corrales y la hornacina con la imagen del santo donde da inicio el encierro.
+                        </p>
+                        <a href="">Leer más</a>                                         
+                    </div>
+                </div>
+                <div class="subcontainer-cat1">
+                    <figure>
+                        <div class="imagen-video">
+                            <img src="./images/rincon_caballo_blanco.jpg" alt="Calle Estafeta">
+                        </div>
+                        <figcaption>Rincón del Caballo Blanco</figcaption>
+                    </figure>
+                    <div class="subcontainer-cat1-texto">
+                        <h2> <a href="">Rincón del Caballo Blanco</a></h2>
+                        <p>
+                            En el punto más alto de la muralla, es uno de los rincones con más encanto de la ciudad y cuenta con fabulosas vistas sobre la cuenca.
+                        </p>
+                        <a href="">Leer más</a>                                         
+                    </div>
+                </div>
+            </div>          
+            
+        </main>
+        <include src="./components/footer.html"></include>
+        <script src="./scripts/menu.js"></script>
+    </body>
 </html>
