@@ -141,7 +141,8 @@ margin-bottom: 5px;
 grid-column:span 1;
 gap: 30px;
 height: auto;
-
+  width: 80%;
+  margin: auto;
 
 }
 .subcontainer-cat1 img, .subcontainer-press1 img {
@@ -165,6 +166,7 @@ margin:0;
 margin-left: 10%;
 margin-right: 10%;
 margin-bottom: 10%;
+width: 70%;
 }
 #map {
 width: 100%; /* Ocupa todo el ancho del contenedor */
@@ -211,7 +213,6 @@ figcaption {
 .carrusel, .video-container {
   position: relative;
   width: 100%;
-  
   margin: auto;
   overflow: hidden;
   padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
@@ -247,7 +248,10 @@ figcaption {
   right: 10px;
 }
 
-
+.subcontainer-press1-texto{
+  width:80%;
+  margin:auto;
+}
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -316,11 +320,11 @@ h2 {
 }
 footer .foot1 {
   flex-basis: 20%; /* Ocupa el 25% del ancho del contenedor */
-  border: 2px solid rgb(0, 255, 21);
+ 
 }
 
 footer .foot2  {
-  border: 2px solid rgb(69, 14, 234);
+
   flex-basis: 50%; /* Ocupa el 7% del ancho del contenedor */
   text-align: left; /* Alineación a la derecha del contenido del nav */
 }
@@ -336,7 +340,7 @@ footer ul {
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 5px;
-  border: 2px solid rgb(199, 10, 13);
+  
   padding-left: 0px;
 }
 

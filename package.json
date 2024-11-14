@@ -10,7 +10,8 @@
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
-    "posthtml": "posthtml src/**/*.html -o dist"
+    "posthtml": "posthtml src/**/*.html -o dist/temp"
+  
   },
   "keywords": [],
   "author": "ECL <ecristoball@uoc.edu>",
