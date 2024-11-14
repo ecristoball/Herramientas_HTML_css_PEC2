@@ -1,6 +1,6 @@
-const currentPage = window.location.pathname.split('/').pop();
-
-// Ocultar el enlace correspondiente a la página actual
-if (currentPage === 'index.html') {
-    document.getElementById('inicio-link').style.display = 'none';
-} 
+document.addEventListener('DOMContentLoaded', () => {
+    const currentPage = window.location.pathname.split('/').pop();
+    if (currentPage === 'index.html' || currentPage === '') {
+        document.getElementById('inicio-link').style.display = 'none';
+    }
+});
