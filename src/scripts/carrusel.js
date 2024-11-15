@@ -33,7 +33,7 @@ let currentIndex = {
   function nextImage(carruselId) {
       const carrusel = document.getElementById(carruselId);
       const images = carrusel.querySelectorAll('.carrusel-images img');
-      
+      console.log('Script cargado correctamente');
       // Ajustar el índice para ir a la imagen siguiente, con loop
       currentIndex[carruselId] = (currentIndex[carruselId] + 1) % images.length;
       showImage(carruselId);
