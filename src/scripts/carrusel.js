@@ -38,7 +38,10 @@ let currentIndex = {
       currentIndex[carruselId] = (currentIndex[carruselId] + 1) % images.length;
       showImage(carruselId);
   }
-  
+window.showImage = showImage;
+window.prevImage = prevImage;
+window.nextImage = nextImage;
+
   // Mostrar la primera imagen al cargar la página para cada carrusel
   window.onload = function() {
       showImage('carrusel1');
